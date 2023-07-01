@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+
 import { useState } from "react";
 import { GetServerSideProps } from "next";
 import "semantic-ui-css/semantic.min.css";
@@ -12,7 +13,7 @@ interface SearchCatImage {
 }
 
 interface IndexPageProps {
-  initialCatImageUlr: tring;
+  initialCatImageUlr: string;
 }
 
 const fetchCatImage = async (): Promise<SearchCatImage> => {
